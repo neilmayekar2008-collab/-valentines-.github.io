@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anushka — Will you be my valentine?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="card">
+      <h1 class="name">Anushka</h1>
+      <p class="question">Will you be my valentine?</p>
+
+      <div class="options">
+        <button id="yesBtn" class="btn btn-yes" aria-label="Yes, I will be your valentine">YES</button>
+
+        <label class="toggle-wrap" aria-hidden="true" title="No (disabled)">
+          <input type="checkbox" disabled class="toggle-input" />
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+          <span class="toggle-label">NO</span>
+        </label>
+      </div>
+
+      <p class="hint">Click the big "YES" button.</p>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel" role="document">
+      <button id="closeModal" class="modal-close" aria-label="Close">✕</button>
+      <h2 class="modal-title">yay i knew it, no wasn't an option</h2>
+      <div class="gif-wrap">
+        <!-- Using the GIF provided by the user -->
+        <img id="celebrationGif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzBpaDdpdmtlamk3aDc5a29lNXMzcjAwdXhiYjB0aXJ0aHFoMmFxaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ICqfWJ6GZJd6M/giphy.gif" alt="Cute celebration gif" />
+      </div>
+      <button id="modalOk" class="btn btn-ok">Aww yes 💖</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
